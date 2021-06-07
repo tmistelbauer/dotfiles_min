@@ -114,3 +114,6 @@ export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
 # Virtualenv
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME=$HOME/.virtualenvs
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform
