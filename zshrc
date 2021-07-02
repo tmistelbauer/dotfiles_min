@@ -117,3 +117,5 @@ export WORKON_HOME=$HOME/.virtualenvs
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+
+export PATH=$PATH:/home/tom/geckodriver/.
