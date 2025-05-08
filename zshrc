@@ -3,7 +3,7 @@
 export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/tom/.oh-my-zsh"
+export ZSH="/home/thomas/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,7 +72,7 @@ ZSH_THEME="sorin"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(ansible aws docker git python vagrant virtualenvwrapper)
+plugins=(ansible aws docker git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,19 +106,12 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-
-# Vagrant exports
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-export PATH="$PATH:/mnt/c/Program Files/Oracle/VirtualBox"
-
 # Virtualenv
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-export WORKON_HOME=$HOME/.virtualenvs
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
-export PATH=$PATH:/home/tom/geckodriver/.
+export PATH=$PATH:/home/thomas/geckodriver/.
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
