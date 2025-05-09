@@ -3,7 +3,7 @@
 export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/bin:$HOME/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/thomas/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -111,7 +111,7 @@ alias l='ls -CF'
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
-export PATH=$PATH:/home/thomas/geckodriver/.
+export PATH=$PATH:$HOME/geckodriver/.
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
